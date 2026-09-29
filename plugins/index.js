@@ -4,6 +4,9 @@
  */
 
 const ExamplePlugin = require('./example');
+const LoggerPlugin = require('./logger');
+const CachePlugin = require('./cache');
+const OmniRoutePlugin = require('./omniroute-plugin');
 
 class PluginManager {
   constructor() {
@@ -68,4 +71,4 @@ class PluginManager {
   }
 }
 
-module.exports = { PluginManager, ExamplePlugin };
+module.exports = { PluginManager, ExamplePlugin, LoggerPlugin, CachePlugin, OmniRoutePlugin };
