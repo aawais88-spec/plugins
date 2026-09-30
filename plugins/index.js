@@ -12,6 +12,7 @@ const ExternalRouterPlugin = require('./external-router-plugin');
 const AuthPlugin = require('./auth-plugin');
 const OmniRouteGlobalPlugin = require('./omniroute-global-plugin');
 const GraphifyyPlugin = require('./graphifyy-plugin');
+const APIKeyManager = require('./api-key-manager');
 
 class PluginManager {
   constructor() {
@@ -76,4 +77,4 @@ class PluginManager {
   }
 }
 
-module.exports = { PluginManager, ExamplePlugin, LoggerPlugin, CachePlugin, OmniRoutePlugin, DatabasePlugin, ExternalRouterPlugin, AuthPlugin, OmniRouteGlobalPlugin, GraphifyyPlugin };
+module.exports = { PluginManager, ExamplePlugin, LoggerPlugin, CachePlugin, OmniRoutePlugin, DatabasePlugin, ExternalRouterPlugin, AuthPlugin, OmniRouteGlobalPlugin, GraphifyyPlugin, APIKeyManager };
